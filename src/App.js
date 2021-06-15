@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Floor from "./Floor";
+import "./app.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<div className="App">
+			Lift Simulations
+			<div className="floors">
+				<Floor index={4} />
+				<Floor index={3} />
+				<Floor index={2} />
+				<Floor index={1} />
+				<div className="lift" id="lift"></div>
+			</div>
+		</div>
+	);
+};
 
 export default App;
