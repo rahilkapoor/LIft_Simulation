@@ -1,25 +1,51 @@
+h1 {
+    color: white;
+    margin: 0 2rem;
+}
+
+.play,
+.app__header,
+.app__header__options,
+.no__floor {
+    display: flex;
+}
+
 .play {
-	display: flex;
 	flex-direction: row;
 }
 
 .floors {
 	background: limegreen;
 	position: relative;
-	/* padding: 10px; */
 }
-/* 
-.lifts {
-	background: mediumpurple;
-	position: relative;
-} */
 
-.lift {
-	background: crimson;
-	height: 100px;
-	width: 70px;
-	position: absolute;
-	bottom: 0;
-	margin: 10px;
-	left: 20vw;
+.app__header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__input {
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    font-size: large;
+    padding-left: 1rem;
+    height: 2.2rem;
+}
+
+.app__link {
+    text-decoration: none;
+    color: crimson;
+}
+
+.app__link:hover {
+    color: limegreen;
+}
+
+.no__floor {
+    margin-top: 12%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

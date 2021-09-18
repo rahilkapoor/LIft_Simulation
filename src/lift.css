@@ -1,0 +1,25 @@
+#lift {
+    background: limegreen;
+	height: 100px;
+	width: 70px;
+	position: absolute;
+	bottom: 0;
+	margin: 10px;
+    z-index: 10;
+    left: 20vw;
+    border: 0.1rem solid #fff;
+    display: flex;
+    /* display: none; */
+}
+
+.lift__left {
+    background: crimson;
+    width: 50%;
+    position: relative;
+}
+
+.lift__right {
+    width: 50%;
+    position: relative;
+	background: rgba(200, 0, 30, 0.9);
+}
